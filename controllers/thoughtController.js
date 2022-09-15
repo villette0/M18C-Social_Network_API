@@ -39,36 +39,34 @@ module.exports = {
     },
 
 	// Create/post reaction
-	createReaction({ params, body }, res) {
+	createReaction( req, res) {
 		Thought.findOneAndUpdate(
-			{ _id: params.thoughtId },
-			{ $push: { reactions: body } },
+			{ _id: req.params.thoughtId },
+			{ $addToSet: { reactions: req.body } },
 			{ new: true }
 		)
-			.populate({ path: "reactions", select: "-__v" })
-			.select("-__v")
-			.then((dbThoughtData) => {
-				if (!dbThoughtData) {
+			.then((thoughtData) => {
+				if (!thoughtData) {
 					res.status(404).json({ message: "No thought was found with this id." });
 					return;
 				}
-				res.json(dbThoughtData);
+				res.json(thoughtData);
 			})
 			.catch((err) => res.status(400).json(err));
 	},
 	// Delete reaction
-	deleteReaction({ params }, res) {
+	deleteReaction(req, res) {
 		Thought.findOneAndUpdate(
-			{ _id: params.thoughtId },
-			{ $pull: { reactions: { reactionId: params.reactionId } } },
+			{ _id: req.params.thoughtId },
+			{ $pull: { reactions: { reactionId: req.params.reactionId } } },
 			{ new: true }
 		)
-			.then((dbThoughtData) => {
-				if (!dbThoughtData) {
+			.then((thoughtData) => {
+				if (!thoughtData) {
 					res.json(404).json({ message: "No thought was found with this id." });
 					return;
 				}
-				res.json(dbThoughtData);
+				res.json(thoughtData);
 			})
 			.catch((err) => res.json(400).json(err));
 	},
