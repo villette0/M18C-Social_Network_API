@@ -20,10 +20,6 @@ router.route('/:userId')
     .delete(deleteUser)
     .put(updateUser);
 
-// // Insomnia Route: http://localhost:3001/api/users/:userId/friends
-// router.route('/:userId/friends')
-//     .post(addFriend);
-
 // Insomnia Route: http://localhost:3001/api/users/:userId/friends/friendId
 router.route('/:userId/friends/:friendId')
     .post(addFriend)
