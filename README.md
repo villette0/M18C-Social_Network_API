@@ -1,10 +1,10 @@
 # Social Network API
 
 ## Application Description
-This is a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. Express.js is used for routing, as well as a MongoDB database, and the Mongoose ODM. 
+This is a social network web application where users can share their thoughts, react to friends’ thoughts, and add or delete friends. Express.js is used for routing, as well as a MongoDB database, and the Mongoose ODM. 
 
 ## Challenge Description
-The application is started 
+The application is started running "npm start" in the terminal. Upon opening Insomnia, routes can be acccessed at localhost port 3001. The user routes for functionality include GET to find all users or a specific uesr, POST to create a user, PUT to update one and finally DELETE. The thought routes similarly include GET to find all or a single thought, POST to create a thought, PUT to update, or DELETE. Next, user routes enable POST to create a friend or DELETE. Thought routes additionally include POST to add a reaction or DELETE.
 
 ## User Story
 
@@ -29,16 +29,14 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 ```
 
 ## Tasks Completed
-The JavaScript documents include:
-* functions, variables, objects
-* conditional statements, arrays, queries, and string interpolation
-* node modules such as Express.js
+* API routes for users/thoughts/reactions/friends
+* contollers with function to enable creating/deleting/updating
+* models for schemas of users/thoughts/reactions
+* express, mongoose, nodeman node dependencies
 * comments
-
 
 ## Languages
 - JavaScript
-
 
 ## Links
 * [Application Walkthrough Video](https://drive.google.com/...)
@@ -47,8 +45,6 @@ The JavaScript documents include:
 
 ## Screenshots
 ![image](./assets/images/readme-screenshot.png)
-
-![image](./assets/images/readme-screenshot-2.png)
 
 ## Credit
 Villette Comfort
