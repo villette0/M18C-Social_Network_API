@@ -43,15 +43,15 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 Part 1
 
-(https://youtu.be/SAfwCnJCVzI)
+https://youtu.be/SAfwCnJCVzI
 
 Part 2
 
-(https://youtu.be/kUw35xLp5hM)
+https://youtu.be/kUw35xLp5hM
 
 Part 3
 
-(https://youtu.be/0ZvOWG95IjA)
+https://youtu.be/0ZvOWG95IjA
 
 * [Repository](https://github.com/villettec/M18C-Social_Network_API)
 
