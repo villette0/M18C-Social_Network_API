@@ -39,7 +39,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 - JavaScript
 
 ## Links
-* [Application Walkthrough Video]
+* Application Walkthrough Video
 
 Part 1
 
