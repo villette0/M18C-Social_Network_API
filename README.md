@@ -53,12 +53,8 @@ Part 3
 
 https://youtu.be/0ZvOWG95IjA
 
-* [Repository](https://github.com/villettec/M18C-Social_Network_API)
+* [Repository](https://github.com/villette0/M18C-Social_Network_API)
 
 ## Screenshots
 ![image](./assets/images/readme-screenshot.png)
 
-## Credit
-Villette Comfort
-
-villette@live.com
